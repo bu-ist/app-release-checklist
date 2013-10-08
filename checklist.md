@@ -25,9 +25,9 @@ Test all the data downloading sections of the app by trying them on the appropri
 | Edge | | | |
 | GPRS | | | |
 | No Network | | | |
-| Break in Network - use Charles | | | |
+| Break in Network - use Charles |X| | |
 | Server unreachable - timeout | | | |
-| Resumed connect - streaming only | | | |
+| Resumed connect - streaming only |X| | |
 
 --
 
@@ -37,9 +37,9 @@ Change device’s settings then load the app. Check that dates appear correctly,
 | Locale | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
 | 12 and 24 hour clocks | | | |
-| Regions: **fork and add regions for you** | | | |
-| Languages: **fork and add languages for you** | | | |
-| Timezones  | | | |
+| Regions: **fork and add regions for you** |X| | |
+| Languages: **fork and add languages for you** |X| | |
+| Timezones  |X| | |
 | Daylight Savings Time | | | |
 
 --
@@ -107,7 +107,7 @@ Streaming video should have been checked in the network tests.
 | Wifi location | | | |
 | Cell tower location | | | |
 | Unable to find location | | | |
-| No results returned (e.g. too far from any searchable points of interest)  | | | |
+| No results returned (e.g. too far from any searchable points of interest)  |X| | |
 | Location services turned off | | | |
 | Location services disabled for this app | | | |
 
@@ -142,7 +142,7 @@ Test each major view in the app.
 |:---|:---:|:---:|:---:|
 | Double height status bar (eg in call) | | | |
 | Orientation change | | | |
-| Upside-down orientation | | | |
+| Upside-down orientation |X| | |
 | Orientation lock | | | |
 | VoiceOver turned on | | | |
 | Usable by a new user with Screen Curtain turned on | | | |
@@ -176,11 +176,11 @@ Test each major view in the app.
 
 | Title | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| Shake to Undo | | | |
+| Shake to Undo |X| | |
 | Text selection (including disabled when appropriate) | | | |
 | Copy / Paste | | | |
-| Editing when keyboard is hidden | | | |
-| Dictionary / Suggested Word hover | | | |
+| Editing when keyboard is hidden |X| | |
+| Dictionary / Suggested Word hover |X| | |
 
 --
 
@@ -189,14 +189,14 @@ All third party services should use production API key and the new app version s
 
 | Title | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| Production analytics/tracking API key | | | |
-| New app version tracking data available tracking in dashboard | | | |
-| Production crash reporting API key | | | |
+| Production analytics/tracking API key |X| | |
+| New app version tracking data available tracking in dashboard |X| | |
+| Production crash reporting API key || | |
 | Upload dSYM to crash reporting tool | | | |
 | New app version available in crash reporting dashboard | | | |
-| Push notification service API key | | | |
-| New app version added to push service dashboard | | | |
-| Production App ID for social services (Twitter, Facebook, Instagram, etc) | | | |
+| Push notification service API key |X| | |
+| New app version added to push service dashboard |X| | |
+| Production App ID for social services (Twitter, Facebook, Instagram, etc) |X| | |
 
 --
 
@@ -204,8 +204,8 @@ All third party services should use production API key and the new app version s
 
 | Misc | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| Bluetooth | | | |
-| Motion | | | |
+| Bluetooth |X| | |
+| Motion |X| | |
 | Tested in Ad Hoc mode | | | |
 | Version number upgraded | | | |
 | Bundle identifier correct for release | | | |
