@@ -22,12 +22,12 @@ Test all the data downloading sections of the app by trying them on the appropri
 | Connection | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
 | Wifi | | | |
-| Edge | | | |
+| Edge |X| | |
 | GPRS | | | |
 | No Network | | | |
 | Break in Network - use Charles | | | |
 | Server unreachable - timeout | | | |
-| Resumed connect - streaming only | | | |
+| Resumed connect - streaming only |X| | |
 
 --
 
@@ -37,10 +37,10 @@ Change device’s settings then load the app. Check that dates appear correctly,
 | Locale | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
 | 12 and 24 hour clocks | | | |
-| Regions: **fork and add regions for you** | | | |
-| Languages: **fork and add languages for you** | | | |
-| Timezones  | | | |
-| Daylight Savings Time | | | |
+| Regions: **fork and add regions for you** |X| | |
+| Languages: **fork and add languages for you** |X| | |
+| Timezones  |X| | |
+| Daylight Savings Time |X| | |
 
 --
 
@@ -49,22 +49,22 @@ Run the application through navigations using different devices with different i
 
 | Device | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| iPhone / iPod touch running iOS 5.0 | | | |
-| iPhone / iPod touch running iOS 5.1.1 | | | |
+| iPhone / iPod touch running iOS 5.0 |X| | |
+| iPhone / iPod touch running iOS 5.1.1 |X| | |
 | iPhone / iPod touch running iOS 6.0 | | | |
 | iPhone / iPod touch running iOS 6.1.3 | | | |
 | iPhone / iPod touch running iOS 7.0 | | | |
 | Retina iPhone display | | | |
 | Non-retina iPhone display | | | |
-| iPad 1 running iOS 5.0 | | | |
-| iPad 1 running iOS 5.0 | | | |
-| iPhone / iPod touch running iOS 5.1.1 | | | |
+| iPad 1 running iOS 5.0 |X| | |
+| iPad 1 running iOS 5.0 |X| | |
+| iPhone / iPod touch running iOS 5.1.1 |X| | |
 | iPad running iOS 6.0 | | | |
 | iPad running iOS 6.1.3 | | | |
 | iPad running iOS 7.0 | | | |
 | Retina iPad display | | | |
 | Non-retina iPad display | | | |
-| iPad mini display | | | |
+| iPad mini display |X| | |
 
 --
 
@@ -73,15 +73,15 @@ If app plays audio, perform the following checks. For streaming audio, make sure
 
 | Audio | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| Headphones/speaker routing  | | | |
-| Dock connector audio out routing   | | | |
-| iPod touch audio routing (consider model without speaker) | | | |
-| Mute switch functionality (officially it mutes non-user-requested sounds) | | | |
-| Audio pause on received phone call | | | |
-| Background audio (if supported): playback and multitasking bar controls | | | |
-| Start playing audio when another app is already playing | | | |
-| Headphone remote for audio control | | | |
-| Multitasking screen audio control | | | |
+| Headphones/speaker routing  |X| | |
+| Dock connector audio out routing   |X| | |
+| iPod touch audio routing (consider model without speaker) |X| | |
+| Mute switch functionality (officially it mutes non-user-requested sounds) |X| | |
+| Audio pause on received phone call |X| | |
+| Background audio (if supported): playback and multitasking bar controls |X| | |
+| Start playing audio when another app is already playing |X| | |
+| Headphone remote for audio control |X| | |
+| Multitasking screen audio control |X| | |
 
 --
 
@@ -118,11 +118,11 @@ If app takes pictures or video clips, perform the following checks. For streamin
 
 | Camera / Video | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| Primary camera photo taken | | | |
-| Primary camera video captured | | | |
-| Secondary (user facing) camera taken | | | |
-| Secondary (user facing) video captured | | | |
-| Video recording paused on received phone call | | | |
+| Primary camera photo taken |X| | |
+| Primary camera video captured |X| | |
+| Secondary (user facing) camera taken |X| | |
+| Secondary (user facing) video captured |X| | |
+| Video recording paused on received phone call |X| | |
 
 --
 
@@ -141,11 +141,11 @@ Test each major view in the app.
 | Title | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
 | Double height status bar (eg in call) | | | |
-| Orientation change | | | |
-| Upside-down orientation | | | |
+| Orientation change |X| | |
+| Upside-down orientation |X| | |
 | Orientation lock | | | |
 | VoiceOver turned on | | | |
-| Usable by a new user with Screen Curtain turned on | | | |
+| Usable by a new user with Screen Curtain turned on |X| | |
 | Works with Accessibility Zoom turned on | | | |
 
 --
@@ -154,10 +154,10 @@ Test each major view in the app.
 
 | Core Data | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| Validation error in user input | | | |
-| Validation error in web server input | | | |
-| Test migrations with valid and invalid data files | | | |
-| Rollback | | | |
+| Validation error in user input |X| | |
+| Validation error in web server input |X| | |
+| Test migrations with valid and invalid data files |X| | |
+| Rollback |X| | |
 
 --
 
@@ -176,11 +176,11 @@ Test each major view in the app.
 
 | Title | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| Shake to Undo | | | |
+| Shake to Undo |X| | |
 | Text selection (including disabled when appropriate) | | | |
 | Copy / Paste | | | |
-| Editing when keyboard is hidden | | | |
-| Dictionary / Suggested Word hover | | | |
+| Editing when keyboard is hidden |X| | |
+| Dictionary / Suggested Word hover |X| | |
 
 --
 
@@ -189,14 +189,14 @@ All third party services should use production API key and the new app version s
 
 | Title | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| Production analytics/tracking API key | | | |
-| New app version tracking data available tracking in dashboard | | | |
-| Production crash reporting API key | | | |
-| Upload dSYM to crash reporting tool | | | |
-| New app version available in crash reporting dashboard | | | |
-| Push notification service API key | | | |
-| New app version added to push service dashboard | | | |
-| Production App ID for social services (Twitter, Facebook, Instagram, etc) | | | |
+| Production analytics/tracking API key |X| | |
+| New app version tracking data available tracking in dashboard |X| | |
+| Production crash reporting API key |X| | |
+| Upload dSYM to crash reporting tool |X| | |
+| New app version available in crash reporting dashboard |X| | |
+| Push notification service API key |X| | |
+| New app version added to push service dashboard |X| | |
+| Production App ID for social services (Twitter, Facebook, Instagram, etc) |X| | |
 
 --
 
@@ -204,8 +204,8 @@ All third party services should use production API key and the new app version s
 
 | Misc | N/A | NO | YES |
 |:---|:---:|:---:|:---:|
-| Bluetooth | | | |
-| Motion | | | |
+| Bluetooth |X| | |
+| Motion |X| | |
 | Tested in Ad Hoc mode | | | |
 | Version number upgraded | | | |
 | Bundle identifier correct for release | | | |
